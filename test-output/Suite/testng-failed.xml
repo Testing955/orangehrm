@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="os" value="mac"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="chrome test(failed)">
+    <classes>
+      <class name="TestCases.TC_001_Login">
+        <methods>
+          <include name="verify_loginddt" invocation-numbers="0 2 3 4"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TC_001_Login -->
+    </classes>
+  </test> <!-- chrome test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
